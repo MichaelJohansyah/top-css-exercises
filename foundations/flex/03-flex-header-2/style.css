@@ -47,12 +47,19 @@ ul {
   list-style-type: none;
 }
 
-header{
-  display: flex;  
-  justify-content: flex-start;
-  align-items: center;
+/* Additions here */
 
+.header{
+  display: flex;  
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
 }
 
-.logo{
+ul{
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  gap: 8px;
+  flex-grow: 1;
 }
