@@ -26,6 +26,11 @@ input {
 }
 
 /* Solution */
+/* Revisions : To remove inefficient way of sizing, using flex on the body instead */
+body{
+  display: flex ;
+  flex-direction: column;
+}
 
 a{
   text-decoration: none;
@@ -49,8 +54,10 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* Revision : remove height values, adding flex : 1 to fill the empty space */
+  flex: 1; 
   gap: 16px;
-  height: 87vh;
+  /* height: 87vh; */
 }
 
 button{
@@ -66,6 +73,6 @@ button{
 .footer{
   display: flex;
   justify-content: space-between;
-  padding: 18px;
-  height: 2vh;
+  padding: 16px;
+  /* height: 2vh; */
 }
